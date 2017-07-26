@@ -109,7 +109,7 @@ func (t *SimpleChainecode) changeOwner(stub shim.ChaincodeStubInterface, args []
 	fmt.Println("running write()")
 	
 	if len(args) != 2 {
-		return nil, error.New("Incorrect number of arguments.")
+		return nil, errors.New("Incorrect number of arguments.")
 	}
 	
 	asset = args[0]
