@@ -103,7 +103,7 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 
 
 
-func (t *SimpleChainecode) changeOwner(stub shim.ChaincodeStubInterface, args []string)([]byte,error){
+func (t *SimpleChaincode) changeOwner(stub shim.ChaincodeStubInterface, args []string)([]byte,error){
 	var asset, newowner string
 	var err error
 	fmt.Println("running write()")
