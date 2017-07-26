@@ -115,7 +115,7 @@ func (t *SimpleChainecode) changeOwner(stub shim.ChaincodeStubInterface, args []
 	asset = args[0]
 	newowner = arg[1]
 	err = stub.PutState(asset, []byte(newowner))
-	if err != nill {
+	if err != nil {
 		return nil, err
 	}
 	return nil, nil
